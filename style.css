@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    background-color: #413F42;
+    font-size: 50%;
+}
+body {
+    width: 90%;
+    /* height: 150vh; */
+    margin: 0 auto;
+    background-color: #F7F7F7;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+button {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: brown;
+    color: white;
+    border: 0;
+    padding: 5px;
+}
+
+nav {
+    height: 7.2rem;
+    background-color: #323232;
+}
+nav .logo {
+    font-size: 2.8rem;
+    display: inline-block;
+    width: 40%;
+    padding: 1.6rem 0 0 1rem;
+    color: brown;
+    letter-spacing: 0.5rem;
+    text-shadow: 0 0 4px;
+}
+
+nav ul {
+    list-style-type: none;
+    float: right;
+    width: 60%;
+    text-align: center;
+    
+}
+nav ul li {
+    display: inline-block;
+    width: 40%;
+    padding: 2.4rem 1rem 0 0;
+}
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: brown;
+}
+
+.banner {
+    height: 278px;
+    background-image: url(images/banner.jpg);
+    background-position: bottom left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 64px 0;
+}
+
+.banner .clip {
+    background-color: rgba(163, 162, 160, 0.25);
+    width: 60%;
+    height: 150px;
+    margin: 0 auto;
+    padding: 24px 0;
+    color: white;
+}
+
+.banner .clip button {
+    font-size: 1.4rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+    background-color: darkblue;
+    padding: 4px;
+    width: 50%;
+    border: 1px solid white;
+    margin-top: 8px;
+}
+
+
+
+.container {
+    /* background-color: bisque; */
+    width: 100%;
+    height: auto;
+}
+.container main .post {
+    width: 95%;
+    height: 50rem;
+    margin: 5px auto;
+    /* margin-bottom: 5px; */
+    border: 1px solid dimgray;
+    box-shadow: 0 0 4px dimgray;
+    /* background-color: beige; */
+}
+
+.container main .post img {
+    width: 100%;
+    height: 30rem;
+}
+.container main .post .description {
+    height: 20rem;
+    padding: 10px;
+}
+
+.container main .post .description h3 {
+    font-size: 1.8rem;
+    /* margin: 8px 0; */
+}
+
+.container main .post .description p.publishdate {
+    color: lightslategray;
+    font-size: 1.2rem;
+    padding: 8px 0;
+}
+.container main .post .description p.publishdate .category {
+    display: inline-block;
+    /* width: 5rem; */
+    text-align: center;
+    background-color: brown;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 15px;
+}
+.container main .post .description p.preview {
+    font-size: 1.4rem;
+}
+.container main .post .description button.more {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.2rem;
+    background-color: brown;
+    color: white;
+    border: 1px solid white;
+    padding: 4px 8px;
+}
+
+.container main .pagination {
+    width: 100%;
+    height: 4rem;
+    text-align: center;
+    font-size: 1.6rem;
+    margin: 1.2rem 0;
+    font-weight: bold;
+    color: white;
+}
+
+.container main .pagination .prevnext {
+    display: inline-block;
+    width: 8rem;
+    background-color: brown;
+    padding: 0.6rem;
+    margin: 0 6px;
+}
+.container main .pagination .page {
+    display: inline-block;
+    width: 4rem;
+    border-radius: 50%;
+    padding: 1.2rem 0;
+    color: white;
+    background-color: brown;
+}
+
+.container aside {
+    width: 100%;
+}
+
+.container aside .wrapper {
+    background-color: #20194a;
+    padding: 0.75rem;
+    color: white;
+}
+
+
+.container aside .wrapper .w-title {
+    font-size: 2rem;
+    
+    border-bottom: 5px solid white;
+    letter-spacing: 1px;
+    /* border-left: 0;
+    border-right: 0; */
+    padding: 0.75rem;
+}
+.container aside .wrapper p {
+    font-size: 1.6rem;
+    
+}
+
+.container aside .wrapper img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin: 1rem auto;
+}
+.container aside .wrapper .recent-post {
+    width: 100%;
+    height: 150px;
+    background-color: #1E3163;
+    margin-top: 1rem;
+}
+.container aside .wrapper .recent-post img {
+    width: 40%;
+    height: 100%;
+    border-radius: 0;
+    border: 0;
+    float: left;
+    margin: 0;
+    margin-right: 1rem;
+}
+.container aside .wrapper .recent-post h4 {
+    font-size: 1.6rem;
+    padding: 1rem 0;
+}
+.container aside .wrapper .recent-post p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.75);
+    padding: 1rem 0;
+}
+.container aside .wrapper .recent-post button.more {
+    margin-top: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+    /* html {
+        background-color: black;
+    } */
+    .banner {
+        height: 378px;
+        padding: 89px 0;
+    }
+    .banner .clip {
+        height: 200px;
+        padding: 59px 0;
+    }
+
+    .container main .post {
+        height: 275px;
+        margin: 5px auto;
+    }
+    .container main .post img {
+        height: 100%;
+        width: 40%;
+        float: left;
+        margin-right: 15px;
+    }
+
+}
+
+.container aside .wrapper table {
+    /* display: block; */
+    width: 100%;
+    border-collapse: separate;
+}
+
+.container aside .wrapper table thead tr th, tbody tr td{
+    border-bottom: 4px solid white;
+}
+.container aside .wrapper table thead {
+    height: 3.6rem;
+}
+.container aside .wrapper table tbody tr {
+    height: 3.2rem;
+}
+.col-1 {
+    width: 75%;
+    /* height: 2.4rem; */
+    text-align: left;
+    font-size: 1.6rem;
+}
+.col-2 {
+    width: 25%;
+    /* height: 2.4rem; */
+    text-align: right;
+    font-size: 1.6rem;
+    height: 2.4rem;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    font-size: 2.4rem;
+    text-align: center;
+    padding: 3.8rem;
+    background-color: #0E185F;
+    color: white;
+}
+
+@media screen and (min-width: 1280px) {
+    /* html {
+        background-color: black;
+    } */
+    .banner {
+        height: 478px;
+        padding: 114px 0;
+    }
+    .banner .clip {
+        height: 250px;
+        padding: 72px 0;
+        font-size: 1.6rem;
+    }
+    .banner .clip button {
+        font-size: 2rem;
+    }
+    .container {
+        width: 100%;
+        height: 1240px;
+        background-color: white;
+    }
+    .container main {
+        width: 65%;
+        /* background-color: aqua; */
+        float: left;
+    }
+    .container aside {
+        width: 35%;
+        
+        float: right;
+
+    }
+    footer {
+        width: 100%;
+        float: left;
+    }
+
+}
